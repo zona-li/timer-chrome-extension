@@ -1,25 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+  "name": "Time Tracker",
+  "version": "1.0",
+  "description": "Track how much time you spend on each website.",
+  "permissions": ["declarativeContent", "tabs", "storage"],
+  "background": {
+    "scripts": ["timer.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Time Tracker",
+    "default_icon": {
+      "48": "time-48.png"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  },
+  "icons": {
+    "48": "time-48.png"
+  },
+  "manifest_version": 2
 }
